@@ -1,0 +1,15 @@
+name                            : 'bitstring'
+version                         : '1.0.0'
+description                     : 'Read/write packed binary strings bit-by-bit'
+homepage                        : 'https://github.com/dsc/bitstring.js'
+keywords                        : <[ bitstring binary buffer util server client browser ]>
+author                          : 'David Schoonover <dsc@less.ly> (http://less.ly)'
+
+main                            : './bitstring'
+devDependencies                 : coco : '>= 0.7.0'
+
+repository                      : type:'git', url:'git://github.com/dsc/bitstring.js.git'
+bugs                            : url:'https://github.com/dsc/bitstring.js/issues'
+
+engine                          : node:'>=0.6.x'
+license                         : 'MIT'
