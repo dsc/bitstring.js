@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/dsc/bitstring.js.png)](http://travis-ci.org/dsc/bitstring.js)
 # BitString.js
 
 A class to read and write packed binary strings, bit-by-bit.
