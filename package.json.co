@@ -10,6 +10,8 @@ devDependencies                 : coco : '>= 0.7.0'
 
 repository                      : type:'git', url:'git://github.com/dsc/bitstring.js.git'
 bugs                            : url:'https://github.com/dsc/bitstring.js/issues'
+### apparently Component decided to repurpose this, which is beyond stupid
+# scripts                         : prepublish: './build.sh'
 
 engine                          : node:'>=0.6.x'
 license                         : 'MIT'
