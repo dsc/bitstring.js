@@ -1,6 +1,6 @@
 ###     BitString.js -- v1.0.0
 ###     
-###     Copyright (c) 2012 David Schoonover <dsc@less.ly> (http://less.ly)
+###     Copyright (c) 2012-2014 David Schoonover <dsc@less.ly> (http://less.ly)
 ###     BitString.js is freely distributable under the MIT license.
 ###     
 ###     For all details, documentation, and source:
@@ -257,8 +257,14 @@ class BitString
 BitString import {SEEK_ABSOLUTE, SEEK_RELATIVE, SEEK_FROM_EOF}
 
 
-if module?
-    module.exports = BitString
-else if window?
-    window.BitString = BitString
+
+#### Module systems magic dance ####
+
+if typeof define is 'function' and define.amd
+    define 'bitstring', [], (require, exports, module) -> module.exports = BitString
+else if exports?
+    exports = module.exports = BitString if module?.exports
+    exports.BitString = BitString
+else
+    window?.BitString = BitString
 
